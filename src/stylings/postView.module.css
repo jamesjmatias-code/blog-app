@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+.page {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+.cardTop {
+    margin-bottom: 6px;
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: #111827;
+    overflow-wrap: anywhere;
+}
+
+.userData {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin: 6px 0 14px;
+}
+
+.imageWrapper {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    border-radius: 14px;
+    margin: 14px 0 18px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.shortDescription {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.content {
+    font-size: 1rem;
+    color: #111827;
+    line-height: 1.8;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .imageWrapper {
+        max-height: none;
+        aspect-ratio: 16 / 9;
+    }
+}

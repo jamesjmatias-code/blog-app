@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    gap: 12px;
+}
+
+.header i {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.header i:hover {
+    color: #111827;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    color: #111827;
+}
+
+.contentInput {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem 1.5rem 2rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+input,
+textarea {
+    margin-top: 6px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    align-self: flex-center;
+    padding: 10px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 16px;
+    }
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .contentInput {
+        gap: 16px;
+        padding: 1rem;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+}
